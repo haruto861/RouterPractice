@@ -21,6 +21,20 @@ final class Router {
         self.window = window
         window.makeKeyAndVisible()
         let vc = FirstViewController.makeFromStoryboard()
-        window.rootViewController = vc
+        let nav = UINavigationController(rootViewController: vc)
+        window.rootViewController = nav
+    }
+
+    func toSecond(from : UIViewController) {
+        let next = UIStoryboard.secondViewController
+        transit(from: from, to: next)
+    }
+
+    func transit(from: UIViewController, to: UIViewController, animated: Bool = true) {
+        if let nav = from.navigationController {
+            nav.pushViewController(to, animated: animated)
+        } else {
+            from.present(to, animated: animated, completion: nil)
+        }
     }
 }

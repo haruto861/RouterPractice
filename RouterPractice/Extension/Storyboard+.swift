@@ -13,6 +13,10 @@ extension UIStoryboard {
     static var firstViewController: FirstViewController {
         return UIStoryboard(name: "First", bundle: nil).instantiateInitialViewController() as! FirstViewController
     }
+
+    static var secondViewController: SecondViewController {
+        return UIStoryboard(name: "Second", bundle: nil).instantiateInitialViewController() as! SecondViewController
+    }
 }
 
 
