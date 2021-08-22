@@ -14,13 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
-        let window = UIWindow(windowScene: scene)
-        self.window = window
-        window.makeKeyAndVisible()
-
-        let storyboard = UIStoryboard(name: "First", bundle: nil)
-        let vc = storyboard.instantiateInitialViewController() as! FirstViewController
-        window.rootViewController = vc
+        Router.shared.makeRout(scene: scene)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

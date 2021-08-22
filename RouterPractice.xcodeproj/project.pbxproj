@@ -14,6 +14,8 @@
 		F1012C1A26D0DA1B003DFDB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1012C1826D0DA1B003DFDB6 /* LaunchScreen.storyboard */; };
 		F184F91426D1DEB200F05C1C /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F184F91326D1DEB200F05C1C /* First.storyboard */; };
 		F184F91626D1DEC100F05C1C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184F91526D1DEC100F05C1C /* FirstViewController.swift */; };
+		F184F91926D1E00400F05C1C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184F91826D1E00400F05C1C /* Router.swift */; };
+		F184F91C26D1E1A900F05C1C /* Storyboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184F91B26D1E1A900F05C1C /* Storyboard+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		F1012C1B26D0DA1B003DFDB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F184F91326D1DEB200F05C1C /* First.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
 		F184F91526D1DEC100F05C1C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F184F91826D1E00400F05C1C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F184F91B26D1E1A900F05C1C /* Storyboard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		F1012C0C26D0DA1A003DFDB6 /* RouterPractice */ = {
 			isa = PBXGroup;
 			children = (
+				F184F91A26D1E18700F05C1C /* Extension */,
+				F184F91726D1DFF600F05C1C /* Router */,
 				F184F91226D1DEA000F05C1C /* First */,
 				F1012C0D26D0DA1A003DFDB6 /* AppDelegate.swift */,
 				F1012C0F26D0DA1A003DFDB6 /* SceneDelegate.swift */,
@@ -76,6 +82,22 @@
 				F184F91326D1DEB200F05C1C /* First.storyboard */,
 			);
 			path = First;
+			sourceTree = "<group>";
+		};
+		F184F91726D1DFF600F05C1C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F184F91826D1E00400F05C1C /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F184F91A26D1E18700F05C1C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F184F91B26D1E1A900F05C1C /* Storyboard+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +172,8 @@
 			files = (
 				F1012C1226D0DA1A003DFDB6 /* ViewController.swift in Sources */,
 				F1012C0E26D0DA1A003DFDB6 /* AppDelegate.swift in Sources */,
+				F184F91C26D1E1A900F05C1C /* Storyboard+.swift in Sources */,
+				F184F91926D1E00400F05C1C /* Router.swift in Sources */,
 				F1012C1026D0DA1A003DFDB6 /* SceneDelegate.swift in Sources */,
 				F184F91626D1DEC100F05C1C /* FirstViewController.swift in Sources */,
 			);
