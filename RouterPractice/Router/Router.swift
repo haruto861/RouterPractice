@@ -11,22 +11,29 @@ import UIKit
 final class Router {
 
     static var shared: Router = .init()
-    var window: UIWindow?
+    // 外部からのイニシャライズを防ぐ
+    private init() {}
+    private (set) var window: UIWindow?
 
-    func makeRout(scene: UIWindowScene?) {
-        guard let scene = scene else {
-            return
-        }
-        let window = UIWindow(windowScene: scene)
-        self.window = window
-        window.makeKeyAndVisible()
+    func makeRout(window: UIWindow?) {
         let vc = FirstViewController.makeFromStoryboard()
         let nav = UINavigationController(rootViewController: vc)
-        window.rootViewController = nav
+        window?.rootViewController = nav
+        window?.makeKeyAndVisible()
+        self.window = window
+    }
+
+    func toFirst() {
+        makeRout(window: window)
     }
 
     func toSecond(from : UIViewController) {
         let next = UIStoryboard.secondViewController
+        transit(from: from, to: next)
+    }
+
+    func toThird(from: UIViewController) {
+        let next = UIStoryboard.thirdViewController
         transit(from: from, to: next)
     }
 

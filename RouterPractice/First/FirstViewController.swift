@@ -7,11 +7,10 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+final class FirstViewController: UIViewController {
 
     @IBOutlet private weak var transitButton: UIButton! {
         didSet {
-            // viewdidload的な存在
             transitButton.addTarget(self, action: #selector(transitToNext), for: .touchUpInside)
         }
     }
@@ -22,8 +21,8 @@ class FirstViewController: UIViewController {
     }
 
     @objc private func transitToNext() {
-        // viecontrollerは遷移するという動きを指示するだけでいいので、インスタンスの取得等はRouterクラスに任せている
         Router.shared.toSecond(from: self)
     }
-
 }
+
+

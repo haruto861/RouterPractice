@@ -7,11 +7,15 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+final class SecondViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBOutlet private weak var transitButton: UIButton! {
+        didSet {
+            transitButton.addTarget(self, action: #selector(transitToNext), for: .touchUpInside)
+        }
+    }
 
-        // Do any additional setup after loading the view.
+    @objc private func transitToNext() {
+        Router.shared.toThird(from: self)
     }
 }

@@ -18,6 +18,8 @@
 		F184F91C26D1E1A900F05C1C /* Storyboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184F91B26D1E1A900F05C1C /* Storyboard+.swift */; };
 		F184F91F26D21DA600F05C1C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184F91E26D21DA600F05C1C /* SecondViewController.swift */; };
 		F184F92126D21DB200F05C1C /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F184F92026D21DB200F05C1C /* Second.storyboard */; };
+		F184F92426D229BC00F05C1C /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184F92326D229BC00F05C1C /* ThirdViewController.swift */; };
+		F184F92626D229C500F05C1C /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F184F92526D229C500F05C1C /* Third.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		F184F91B26D1E1A900F05C1C /* Storyboard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+.swift"; sourceTree = "<group>"; };
 		F184F91E26D21DA600F05C1C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F184F92026D21DB200F05C1C /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		F184F92326D229BC00F05C1C /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		F184F92526D229C500F05C1C /* Third.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Third.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				F184F91726D1DFF600F05C1C /* Router */,
 				F184F91226D1DEA000F05C1C /* First */,
 				F184F91D26D21D5000F05C1C /* Second */,
+				F184F92226D2299F00F05C1C /* Third */,
 				F1012C0D26D0DA1A003DFDB6 /* AppDelegate.swift */,
 				F1012C0F26D0DA1A003DFDB6 /* SceneDelegate.swift */,
 				F1012C1126D0DA1A003DFDB6 /* ViewController.swift */,
@@ -112,6 +117,15 @@
 				F184F92026D21DB200F05C1C /* Second.storyboard */,
 			);
 			path = Second;
+			sourceTree = "<group>";
+		};
+		F184F92226D2299F00F05C1C /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				F184F92526D229C500F05C1C /* Third.storyboard */,
+				F184F92326D229BC00F05C1C /* ThirdViewController.swift */,
+			);
+			path = Third;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +189,7 @@
 				F1012C1A26D0DA1B003DFDB6 /* LaunchScreen.storyboard in Resources */,
 				F1012C1726D0DA1B003DFDB6 /* Assets.xcassets in Resources */,
 				F184F91426D1DEB200F05C1C /* First.storyboard in Resources */,
+				F184F92626D229C500F05C1C /* Third.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +206,7 @@
 				F184F91926D1E00400F05C1C /* Router.swift in Sources */,
 				F184F91F26D21DA600F05C1C /* SecondViewController.swift in Sources */,
 				F1012C1026D0DA1A003DFDB6 /* SceneDelegate.swift in Sources */,
+				F184F92426D229BC00F05C1C /* ThirdViewController.swift in Sources */,
 				F184F91626D1DEC100F05C1C /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
